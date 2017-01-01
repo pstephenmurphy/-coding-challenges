@@ -1,8 +1,10 @@
 package coding.challenges;
 
+import com.sun.istack.internal.NotNull;
+
 public class Person {
     private String firstName, lastName;
-    public Person(String first, String last) {
+    public Person(@NotNull String first, @NotNull String last) {
         if (first == null || last == null) {
             throw new NullPointerException();
         }
